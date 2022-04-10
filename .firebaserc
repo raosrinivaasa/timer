@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "resume-1domain"
+  },
+  "targets": {
+    "resume-1domain": {
+      "hosting": {
+        "XYZ": [
+          "xtimer.web.app"
+        ],
+        "z": [
+          "xtimer"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+html body{
+margin: 0;
+padding: 0;
+}
+body{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(180deg,rgb(236, 243, 248) 3.13%, #03c8ff 100%); */
+
+    background: linear-gradient(180deg,rgb(236, 243, 248) 3.13%, #56daff 100%);
+}
+.clock{
+display: grid;
+width:256px;
+height:256px;
+    background: radial-gradient(86.15% 86.15% at 50% 50%, #FFFFFF 0%, #FFFFFF 51.49%, #ACD4FF 100%);
+    /* border: 5px solid rgb(43, 43, 43); */
+
+    border: 5px solid rgb(16, 16, 16);
+    box-shadow: #000000;
+    border-radius: 50%;
+}   
+
+/*Arranging numbers*/
+.numbers{
+    display: grid;
+    width:256px;
+    height:256px;
+    grid-template-rows: 1fr repeat(5,2fr) 1fr; 
+    /* background-color: rgba(150, 150, 150, 0.295); */
+}
+.twelve{
+    padding-left:120px;
+    padding-top: 8px;
+    /* border: 1px solid red; */
+}
+.one,.five{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    /* border: 1px solid red;    */
+}
+.num1{
+padding-left: 32px;
+}
+.num5{
+   padding-left:32px;
+   padding-top: 16px; 
+}
+.num7{
+    padding-top: 16px; 
+    padding-left:68px;
+}
+.num11{
+    padding-left:64px;
+}
+.two,.four{
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    /* border: 1px solid red; */
+}
+.num2{
+    padding-left:24px;
+}
+.num4{
+    padding-left:24px;
+    padding-top: 16px;
+}
+.num8{
+    padding-left:32px;
+    padding-top: 16px;
+}
+.num10{
+    padding-left:24px;
+    /* padding-top: 16px;  */
+}
+.three{
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    /* border: 1px solid red; */
+}
+.num9{
+padding-left:16px;
+}
+.num3{
+    padding-left:8px;
+}
+.six{
+    display: grid;
+    padding-left:124px;
+    padding-bottom: 4px;
+    /* padding-top: 8px; */
+    grid-template-rows: 10fr 1fr;
+    /* border: 1px solid red; */
+}
+/*hands and other styles*/
+.hands{
+    height:8px;
+    padding-top: 10px;
+}
+.smallHand{
+width: 54px;
+height:2px;
+background-color: black;
+animation: rotate 60s infinite linear;
+}
+.bigHand{
+
+    width:96px;
+    height: 2px;
+background-color: blue;
+animation: rotate 5s infinite linear;
+}
+.myInfo{
+    padding:8px;
+    text-decoration: none;
+    color: #000000;
+    margin-top:104px;
+    border-radius: 40px;
+    border: 1px solid black;
+  
+}
+.myInfo:hover{
+    background-color: #ffffff;
+    /* color: #063f6b; */
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding: 40px;
+}
+
+/*For turning the Clock's hands*/
+@keyframes rotate{
+    0%{ transform-origin: left;
+        transform: rotate(0deg);
+    }
+    100%{transform-origin: left;
+        transform: rotate(360deg);
+    }
+}
